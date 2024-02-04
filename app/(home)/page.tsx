@@ -10,15 +10,19 @@ export default function Home() {
       <Header />
       <div className="px-5 pt-5">
           <h2 className="text-xl font-bold">Olá, Miguel</h2>
-          <p className="capitalize text-sm">{format(new Date, "EEEE',' dd 'de' MMM",{
+          <p className="capitalize text-sm">
+            {format(new Date, "EEEE',' dd 'de' MMM",{
             locale: ptBR,
-          })}</p>
+          })}
+          </p>
       </div>
 
       <div className="px-5 mt-6">
       <Search />
       </div>
-      <div className="px-5">
+
+      <div className="px-5 mt-6">
+        <h2 className="mb-3 text-xs uppercase text-gray-400 font-bold">Agendamentos</h2>
         <Bookings />
       </div>
     </>
