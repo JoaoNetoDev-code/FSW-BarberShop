@@ -6,7 +6,7 @@ import Bookings from "../_components/booking-items";
 
 export default function Home() {
   return (
-    <>
+    <div>
       <Header />
       <div className="px-5 pt-5">
           <h2 className="text-xl font-bold">Olá, Miguel</h2>
@@ -22,9 +22,9 @@ export default function Home() {
       </div>
 
       <div className="px-5 mt-6">
-        <h2 className="mb-3 text-xs uppercase text-gray-400 font-bold">Agendamentos</h2>
+        <h2 className="text-xs mb-3 uppercase text-gray-400 font-bold">Agendamentos</h2>
         <Bookings />
       </div>
-    </>
+    </div>
   );
 }
